@@ -1,0 +1,18 @@
+[project]
+name = "inventory-optimization-system"
+version = "0.1.0"
+description = "MILP inventory optimization with Gurobi: minimize total cost (holding+stockout+ordering). "
+requires-python = ">=3.11"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "I"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
